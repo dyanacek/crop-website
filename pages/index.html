@@ -1,4 +1,37 @@
 {% extends "base.html" %}
-{% block content %}
-Welcome to Cactus!
+
+{% block nav-index %}<span class="navItem navActive"><a href="{{ ROOT_URL }}/index.html">Home</a></span>{% endblock %}
+
+{% block left-content %}
+<p>&nbsp;</p>
+<p class="centered">Join us for the 15th Annual</p>
+<p class="centered" style="font-size: x-large;">Seattle CROP Hunger Walk</p>
+<p class="centered" style="font-size: x-large; font-weight: bold;">October 6th 2013</p>
+<p class="centered">Walks organized in 
+  <a href="{{ ROOT_URL }}/west-seattle.html">West Seattle</a>, 
+  <a href="{{ ROOT_URL }}/green-lake.html">Green Lake</a>, or
+  <a href="{{ ROOT_URL }}/central-seattle.html">Central Seattle</a></p>
+<p class="centered" style="font-size: large">To sign up or donate, click here</p>
+{% endblock %}
+
+
+{% block additional-right-content %}
+
+<div class="rightBox smallPhotoDiv">
+  <img src="static/img/bosniakidsmall.jpg" width="125" height="100">
+  CROP Walk helps people uprooted by war.
+</div>
+<div class="rightBox smallPhotoDiv">
+  <img src="static/img/enmaulloalarge.jpg" width="124" height="102">
+  CROP Walk helps people learn new farming techniques.
+</div>
+<div class="rightBox smallPhotoDiv">
+  <img src="static/img/womanchildwelllrg.jpg" width="120" height="116"> 
+  CROP Walk helps people access clean water.
+</div>
+<div class="rightBox smallPhotoDiv">
+  <img src="static/img/Haiti01.jpg" width="125" height="84">
+  CROP Walk helps people affected by natural disasters.
+</div>
+
 {% endblock %}
